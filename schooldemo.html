@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>School Admission AI Chatbot</title>
+</head>
+<head>
+    <title> School Admission AI Chatbot</title>
+    <style>
+                 .back-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+    z-index:1000;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f7fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+#question {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#answer {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 120px;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>🏫 School Admission AI Chatbot</h1>
+<input
+id="question"
+type="text"
+placeholder="Ask anything about admissions...">
+<br>
+<button id="askBtn">
+Ask
+</button>
+<div id="answer">
+AI answer will appear here...
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+<a href="demo1school.html" class="back-btn">
+    ← Back
+</a>
+</html>

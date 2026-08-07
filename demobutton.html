@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAKURA Demo</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#f5f7fa;
+        }
+
+        /* Back Button */
+        .back-btn{
+            position:absolute;
+            top:20px;
+            left:20px;
+            background:#2563eb;
+            color:white;
+            padding:12px 20px;
+            border-radius:10px;
+            text-decoration:none;
+            font-weight:bold;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .back-btn:hover{
+            background:#1d4ed8;
+            transform:translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero{
+            text-align:center;
+            padding:60px 20px;
+            background:#1e3a8a;
+            color:white;
+        }
+
+        .hero h1{
+            font-size:50px;
+            margin:0;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-top:15px;
+        }
+
+        /* Cards */
+        .card-container{
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            flex-wrap:wrap;
+            margin:50px;
+        }
+
+        .card{
+            width:300px;
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            text-align:center;
+            text-decoration:none;
+            color:black;
+            box-shadow:0 4px 12px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .card img{
+            width:100%;
+            display:block;
+        }
+
+        .card h2{
+            margin:20px 0 10px;
+        }
+
+        .card p{
+            color:gray;
+            padding-bottom:20px;
+        }
+
+        @media (max-width:768px){
+
+            .hero h1{
+                font-size:40px;
+            }
+
+            .hero p{
+                font-size:18px;
+            }
+
+            .card{
+                width:90%;
+            }
+
+            .back-btn{
+                top:15px;
+                left:15px;
+                padding:10px 15px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<a href="YAKURA.v1.html" class="back-btn">Back</a>
+
+<div class="hero">
+    <h1>YAKURA Demo</h1>
+
+    <p>
+        Experience AI Chatbots Built for Different Industries.<br>
+        Choose a Demo Below.
+    </p>
+</div>
+
+<div class="card-container">
+
+    <!-- Working Demo -->
+    <a href="demo1school.html" class="card">
+        <img src="school.png" alt="School AI chatbot">
+        <h2>School Admission AI</h2>
+        <p>Admissions | Fees | Documents</p>
+    </a>
+
+    <!-- Coming Soon -->
+    <a href="#" class="card" style="opacity:0.75; cursor:default; pointer-events:none;">
+        <img src="restaraunt.png" alt="Coming Soon">
+        <h2>Restaurant AI</h2>
+        <p>🚧 Coming Soon</p>
+    </a>
+
+    <!-- Coming Soon -->
+    <a href="#" class="card" style="opacity:0.75; cursor:default; pointer-events:none;">
+        <img src="Apex.png" alt="Coming Soon">
+        <h2>Cloud Infrastructure AI</h2>
+        <p>🚧 Coming Soon</p>
+    </a>
+
+</div>
