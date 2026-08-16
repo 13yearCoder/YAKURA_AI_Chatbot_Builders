@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 # -----------------------------
 # LOAD PDF
 # -----------------------------
-pdf = fitz.open("demoschool.pdf")
+pdf = fitz.open("finaldemoschool.pdf")
 all_text = ""
 for page in pdf:
     all_text += page.get_text() + "\n\n"
@@ -42,7 +42,7 @@ def ask_question(question):
     question_embedding = model.encode(
         [question]
     ).astype("float32")
-    k = 3
+    k = 2
     distances, indices = index.search(
         question_embedding,
         k
