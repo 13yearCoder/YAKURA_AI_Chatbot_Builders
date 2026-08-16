@@ -2,6 +2,6 @@ Flask
 flask-cors
 PyMuPDF
 faiss-cpu
-sentence-transformers
 langchain-text-splitters
 gunicorn
+sentence-transformers
