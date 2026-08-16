@@ -1,3 +1,5 @@
+import os
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import fitz
 import faiss
 from sentence_transformers import SentenceTransformer
